@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#TCP and UCP ports
 
 netstat -l --program
