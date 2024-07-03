@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install nginx on your web-01 server
+# install nginx on my web-01 server
 
 apt-get upgrade -y
 apt-get install nginx -y
