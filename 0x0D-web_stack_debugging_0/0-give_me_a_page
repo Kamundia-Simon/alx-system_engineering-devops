@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Run apache
 echo "ServerName localhost" >> /etc/apache2.conf
-service apache2 restart
+sudo service apache2 start
