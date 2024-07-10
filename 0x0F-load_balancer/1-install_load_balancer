@@ -1,4 +1,4 @@
-##!/usr/bin/env bash
+#!/usr/bin/env bash
 # Install HAproxy on lb-01 server and configure web-01 & web 02
 
 sudo apt-get  upgrade
