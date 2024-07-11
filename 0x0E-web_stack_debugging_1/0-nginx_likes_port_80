@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#buggin a web server
+
+sudo apt-get -y update 
+sudo apt-get -y install  nginx
+sudo service nginx start
