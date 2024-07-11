@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #buggin a web server
 
-sudo apt-get -y update 
-sudo apt-get -y install  nginx
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx start
