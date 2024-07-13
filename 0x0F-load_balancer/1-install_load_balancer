@@ -11,8 +11,8 @@ frontend  kamundia_frontend
 	default_backend kamundia_backend
 backend kamundia_backend
 	balance roundrobin
-	server 451722-web-01 54.175.140.83:80 check
-	server 451722-web-02 54.87.226.206:80 check
+	server 451722-web-01 3.94.185.213 check
+	server 451722-web-02 18.233.63.176 check
 "
 #configuring the HAproxy file in specified located
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
