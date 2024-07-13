@@ -1,11 +1,8 @@
 #!/usr/bin/env bash
 # Install HAproxy on lb-01 server and configure web-01 & web 02
 
-sudo apt-get  upgrade
-sudo apt-get -y install --no-install-recommends software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
-sudo apt-get -y install haproxy=2.6.\*
-
+sudo apt-get -y update
+sudo apt-get -y install haproxy
 server_config=\
 "
 frontend  kamundia_frontend
