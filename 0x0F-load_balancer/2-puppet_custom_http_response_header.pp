@@ -1,7 +1,12 @@
 # Automate adding a custom header with puppet
 
+exec { 'update system':
+  command => '/usr/bin/apt-get update',
+}
+
 package { 'nginx':
   ensure => 'installed',
+  require => Exec['update system'],
 }
 
 file_line { 'install':
@@ -14,6 +19,7 @@ file_line { 'install':
 
 file {'/var/www/html/index.html':
   content=> 'Hello World!'
+}
 
 # Add custom HTTP header 
 file_line { 'add_custom_header':
@@ -26,5 +32,6 @@ file_line { 'add_custom_header':
 }
 service {'nginx':
   ensure  => running,
+  enable  => true,
   require => Package['nginx'],
 }
