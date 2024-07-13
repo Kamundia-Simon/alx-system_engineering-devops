@@ -6,13 +6,13 @@ sudo apt-get -y install haproxy
 server_config=\
 "
 frontend  kamundia_frontend
-    bind *:80
-    mode http
-    default_backend kamundia_backend
+        bind *:80
+	mode http
+	default_backend kamundia_backend
 backend kamundia_backend
-    balance roundrobin
-    server 451722-web-01 54.175.140.83:80 check
-    server 451722-web-02 54.87.226.206:80 check
+	balance roundrobin
+	server 451722-web-01 54.175.140.83:80 check
+	server 451722-web-02 54.87.226.206:80 check
 "
 #configuring the HAproxy file in specified located
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
