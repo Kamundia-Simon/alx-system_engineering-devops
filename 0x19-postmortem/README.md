@@ -13,7 +13,7 @@ July 19, 2024, from 4:09 AM to 5:27 AM (UTC)
 - health care providers 
 - telecommnication companies
 - digital billboards. 
-About 80% of Windows users experienced system crashes and could ot gain access to their computers with the computers displayonly the Windows blue screen of death.
+* About 80% of Windows users experienced system crashes and could ot gain access to their computers with the computers displayonly the Windows blue screen of death.
 **Root Cause**🕵️ 
 We've got Sherlock Holmes in our software team 😂😂
 The root cause was an error emanating from a software update from CrowdStrike, a cybersecurity firm providing antivirus software to Microsoft. The update caused a crucial error in the Windows operating system, leading to the blue screen of death (BSOD).
@@ -39,7 +39,9 @@ The root cause was an error emanating from a software update from CrowdStrike, a
 <div align="center">
   <img src="images/download.jpeg" alt="A stressed Ben Affleck" />
 </div>
+
 **Resolution**
+
 The faulty update was remediated by CrowdStrike at 5:27 AM (UTC) on the same day. Users were instructed to restore their systems to a state prior to the update. Additional updates and patches were issued to address any remaining issues caused by the faulty update. No additional changes to Channel File 291 beyond the updated logic were deployed.
 
 ## Corrective and Preventative Measures
