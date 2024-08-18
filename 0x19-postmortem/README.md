@@ -1,5 +1,7 @@
 # 🚨Postmortem Report: Windows Blue Screen of Death Incident🚨
-![BSOD](images/BSOD.jpeg)
+<div align="center">
+  <img src="images/BSOD.jpeg" alt="BSOD" />
+</div>
 
 ## Issue Summary
 **Duration of the Outage**⏳
@@ -34,7 +36,9 @@ The root cause was an error emanating from a software update from CrowdStrike, a
 ## Root Cause and Resolution
 **Root Cause**
 🚩 The issue was caused by a faulty sensor configuration update from CrowdStrike. The update triggered a logic error that resulted in a system crash and the blue screen of death (BSOD) on impacted systems. The specific file involved, Channel File 291, controls how Falcon evaluates named pipe execution on Windows systems. That's a major redflag from CrowdStrike company I'd say. I'd hate to be the engineer incharge of fixing this issue clearly had a long day at work.
-![A stressed Ben Affleck](images/download.jpeg)
+<div align="center">
+  <img src="images/download.jpeg" alt="A stressed Ben Affleck" />
+</div>
 **Resolution**
 The faulty update was remediated by CrowdStrike at 5:27 AM (UTC) on the same day. Users were instructed to restore their systems to a state prior to the update. Additional updates and patches were issued to address any remaining issues caused by the faulty update. No additional changes to Channel File 291 beyond the updated logic were deployed.
 
@@ -47,4 +51,7 @@ The introduce measures to prevent the occurence of such an outage involve
 - A proper documentation of the the released patch.
 
 I bet using dark mode would prevent your code from having such bugs
-![the office](images/steve-carrell-the-office.gif)
+<div align="center">
+  <img src="images/steve-carrell-the-office.gif" alt="The Office" />
+</div>
+
